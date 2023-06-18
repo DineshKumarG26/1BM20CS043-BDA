@@ -1,0 +1,13 @@
+
+object Main extends App {
+    def search(num: Int, listGiven: List[Int]): Unit = {
+        var length = listGiven.length - 1
+        for(w <- 0 to length) {
+            if(num == listGiven(w)) {
+                println(s"Number found")
+            }
+        }
+    }
+
+    search(2,List(1,2,3,4))
+}
